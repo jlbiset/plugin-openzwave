@@ -16,18 +16,18 @@ Le Z-Wave+, apporte certaines améliorations dont une meilleure portée et amél
 
 ## Compatibilité
 
-Vous pouvez trouver [ici](https://compatibility.jeedom.com/index.php?v=d&p=home&plugin=openzwave) la liste des modules compatible avec le plugin
+Vous pouvez trouver [ici](https://compatibility.jeedom.com/index.php?v=d&p=home&plugin=openzwave) la liste des modules compatibles avec le plugin
 
 ## Distances à respecter avec les autres sources de signaux sans fil
 
-Les récepteurs radio doivent être positionnés à une distance minimum de 50 cm des autres sources radioélectriques.
+Les récepteurs radios doivent être positionnés à une distance minimum de 50 cm des autres sources radioélectriques.
 
 Exemples de sources radioélectriques:
 
 -   Ordinateurs
 -   Les appareils à micro-ondes
 -   Les transformateurs électroniques
--   équipements audio et de matériel vidéo
+-   équipements audios et de matériel vidéo
 -   Les dispositifs de pré-accouplement pour lampes fluorescentes
 
 > **Tip**
@@ -57,11 +57,11 @@ Les nœuds Z-Wave sur secteur peuvent transmettre et répéter les messages qui 
 
 Le contrôleur **Id 1** peut communiquer directement avec les nœuds 2, 3 et 4. Le nœud 6 est en dehors de sa portée radio, cependant, il se trouve dans la zone de couverture radio du nœud 2. Par conséquent, le contrôleur peut communiquer avec le nœud 6 via le nœud 2. De cette façon, le chemin du contrôleur via le nœud 2 vers le nœud 6, est appelé route. Dans le cas où la communication directe entre le nœud 1 et le nœud 2 est bloquée, il y a encore une autre option pour communiquer avec le nœud 6, en utilisant le nœud 3 comme un autre répéteur du signal.
 
-Il devient évident que plus l’on possède de nœuds secteur, plus les options de routage augmentent , et plus la stabilité du réseau augmente. Le protocole Z-Wave est capable de router les messages par l’intermédiaire d’un maximum de quatre nœuds de répétition. C’est un compromis entre la taille du réseau, la stabilité et la durée maximale d’un message.
+Il devient évident que plus l’on possède de nœuds secteur, plus les options de routage augmentent et plus la stabilité du réseau augmente. Le protocole Z-Wave est capable de router les messages par l’intermédiaire d’un maximum de quatre nœuds de répétition. C’est un compromis entre la taille du réseau, la stabilité et la durée maximale d’un message.
 
 > **Tip**
 >
-> Il est fortement recommandé en début d’installation d’avoir un ratio entre nœuds secteur et nœud sur piles de 2/3, afin d’avoir un bon maillage réseau. Privilégier des micromodules aux smart-plugs. Les micros modules seront à un emplacement définitif et ne seront pas débranchés, ils ont aussi en général une meilleure portée. Un bon départ est l’éclairage des zones communes. Il permettra de bien répartir les modules secteurs à des endroits stratégiques dans votre domicile. Par la suite vous pourrez ajouter autant de modules sur pile que souhaité, si vos routes de base sont bonnes.
+> Il est fortement recommandé en début d’installation d’avoir un ratio entre nœuds secteurs et nœuds sur piles de 2/3, afin d’avoir un bon maillage réseau. Privilégier des micromodules aux smart-plugs. Les micros modules seront à un emplacement définitif et ne seront pas débranchés, ils ont aussi en général une meilleure portée. Un bon départ est l’éclairage des zones communes. Il permettra de bien répartir les modules secteurs à des endroits stratégiques dans votre domicile. Par la suite vous pourrez ajouter autant de modules sur pile que souhaité, si vos routes de base sont bonnes.
 
 > **Tip**
 >
@@ -69,7 +69,7 @@ Il devient évident que plus l’on possède de nœuds secteur, plus les options
 
 > **Tip**
 >
-> Il existe des modules répéteur pour combler des zones où aucun module secteur n’a d’utilité.
+> Il existe des modules répéteurs pour combler des zones où aucun module secteur n’a d’utilité.
 
 ## Propriétés des appareils Z-Wave
 
@@ -90,7 +90,7 @@ En résumé:
 
 Après le téléchargement du plugin, il vous suffit de l’activer et de le configurer.
 
-Une fois activé, le démon devrait se lancer. Le plugin est préconfiguré avec des valeurs par défaut ; vous n’avez normalement plus rien à faire. Cependant vous pouvez modifier la configuration.
+Une fois activé, le démon devrait se lancer. Le plugin est préconfiguré avec des valeurs par défaut; vous n’avez normalement plus rien à faire. Cependant vous pouvez modifier la configuration.
 
 ## Dépendances
 
@@ -118,8 +118,8 @@ Cette partie permet de valider l’état actuel du ou des démons et de configur
 -   Le **Statut** indique que le démon est actuellement en fonction.
 -   La **Configuration** indique si la configuration du démon est valide.
 -   Le bouton **(Re)Démarrer** permet de forcer le redémarrage du plugin, en mode normal ou de le lancer une première fois.
--   Le bouton **Arrête**, visible seulement si la gestion automatiqueest désactivée, force l’arrêt du démon.
--   La **Gestion automatique** permet à Jeedom de lancer automatiquementle démon au démarrage de Jeedom, ainsi que de le relancer en casde problème.
+-   Le bouton **Arrête**, visible seulement si la gestion automatique est désactivée, force l’arrêt du démon.
+-   La **Gestion automatique** permet à Jeedom de lancer automatiquementle démon au démarrage de Jeedom ainsi que de le relancer en cas de problème.
 -   Le **Dernier lancement** est comme son nom l’indique la date dudernier lancement connue du demon.
 
 ## Log
@@ -134,22 +134,22 @@ Le niveau **Debug** ou **Info** peuvent être utiles pour comprendre pourquoi le
 
 > **Important**
 >
-> En mode **Debug** le démon est très verbeux, il est recommandé d’utiliser ce mode seulement si vous devez diagnostiquer un problème particulier. Il n’est pas recommandé de laisser tourner le démon en **Debug** en permanence, si on utilise une **SD-Card**. Une fois le debug terminé, il ne faut pas oublier de retourner sur un niveau moins élevé comme le niveau **Error** qui ne remonte que d’éventuelles erreurs.
+> En mode **Debug** le démon est très verbeux, il est recommandé d’utiliser ce mode seulement si vous devez diagnostiquer un problème particulier. Il n’est pas recommandé de laisser tourner le démon en **Debug** en permanence si on utilise une **SD-Card**. Une fois le debug terminé, il ne faut pas oublier de retourner sur un niveau moins élevé comme le niveau **Error** qui ne remonte que d’éventuelles erreurs.
 
 ## Configuration
 
 Cette partie permet de configurer les paramètres généraux du plugin ![configuration06](../images/configuration06.png)
 
 -   **Général** :
-    -   **Supprimer automatiquement les périphériques exclus** :L’option Oui, permet de supprimer les périphériques exclus duréseau Z-Wave. L’option Non, permet de conserver les équipementsdans Jeedom même s’ils ont été exclus du réseau. L’équipement
-        devra être alors supprimé manuellement ou réutilisé en luiassignant un nouvel ID Z-Wave si on exécute une migration ducontrôleur principal.
+    -   **Supprimer automatiquement les périphériques exclus** :L’option Oui, permet de supprimer les périphériques exclus duréseau Z-Wave. L’option Non, permet de conserver les équipements dans Jeedom même s’ils ont été exclus du réseau. L’équipement
+        devra être alors supprimé manuellement ou réutilisé en lui assignant un nouvel ID Z-Wave si on exécute une migration du contrôleur principal.
     -   **Appliquer le jeu de configuration recommandé à l’inclusion** : option pour appliquer directement à l’inclusion le jeu de configuration recommandé par l’équipe Jeedom (conseillée)
     -   **Désactiver l’actualisation en arrière-plan des variateurs** : Ne pas demander de rafraichissement des variateurs en arrière-plan.
     -   **Cycle (s)** : permet de définir la fréquence des remontées à jeedom.
     -   **Port clé Z-Wave** : le port USB sur lequel votre interface Z-Wave est connectée. Si vous utilisez le Razberry, vous avez, en fonction de votre architecture (RPI ou Jeedomboard) les 2 possibilités à la fin de la liste.
     -   **Port du Serveur** (modification dangereuse, doit avoir la même valeur sur tous les Jeedoms déportés Z-Wave) : permet de modifier le port de communication interne du démon.
     -   **Backups** : permet de gérer les backups du fichier de topologie réseaux (voir plus bas)
-    -   **Backups réseaux** : permet de gérer les backups du contrôleur. Vous pourrez créer un backup d'une clé, restaurer un backup, le télécharger ou en uploader un. Pour créer un bakcup il faut bien donner un nom, choisir le bon port pour le contrôleur et cliquer sur lancer une sauvegarde. La procédure peut prendre quelques minutes. Pour restaurer un backup il suffit de choisir le port du contrôleur de choisir dans le menu déroulant le backup à restaurer et de cliquer sur restaurer la sauvegarde.  Le bouton télécharger permet de télécharger une sauvegarde sur votre pc. Le bouton ajouter une sauvegarde permet d'uploader une sauvegarde sur Jeedom. Le bouton supprimer quand à lui permet comme son nom l'indique de supprimer une sauvegarde.
+    -   **Backups réseaux** : permet de gérer les backups du contrôleur. Vous pourrez créer un backup d'une clé, restaurer un backup, le télécharger ou en uploader un. Pour créer un bakcup il faut bien donner un nom, choisir le bon port pour le contrôleur et cliquer sur lancer une sauvegarde. La procédure peut prendre quelques minutes. Pour restaurer un backup il suffit de choisir le port du contrôleur de choisir dans le menu déroulant le backup à restaurer et de cliquer sur restaurer la sauvegarde. Le bouton télécharger permet de télécharger une sauvegarde sur votre pc. Le bouton ajouter une sauvegarde permet d'uploader une sauvegarde sur Jeedom. Le bouton supprimer quand à lui permet comme son nom l'indique de supprimer une sauvegarde.
     -   **Config modules** : permet de récupérer, manuellement, les fichiers de configurations OpenZWave avec les paramètres des modules ainsi que la définition des commandes de modules pour leurs utilisations.
 
         > **Tip**
@@ -281,7 +281,7 @@ Certains modules possèdent plusieurs jeux de commandes préconfigurées
 
 ![appliance06](../images/appliance06.png)
 
-Vous pouvez les sélectionner via les choix possibles, si le module le permet.
+Vous pouvez les sélectionner via les choix possibles si le module le permet.
 
 > **Important**
 >
@@ -322,7 +322,7 @@ Pour appliquer le jeu de configuration recommandé, cliquer sur le bouton : **Co
 
 L’assistant active les différents éléments de configurations.
 
-Une confirmation du bon déroulement sera affichée sous forme de bandeau
+Une confirmation du bon déroulement sera affichée sous forme de bandeau.
 
 ![appliance10](../images/appliance10.png)
 
@@ -444,7 +444,7 @@ L’ensemble des modules utilisant le module en cours ainsi que le nom des group
 
 **Associations multi-instances**
 
-Certain module supporte une commande classe multi-instance associations. Lorsqu’un module supporte cette CC, il est possible de spécifier avec quelle instance on souhaite créer l’association
+Certains modules supportent une commande classe multi-instance associations. Lorsqu’un module supporte cette CC, il est possible de spécifier avec quelle instance on souhaite créer l’association
 
 ![node09](../images/node09.png)
 
@@ -460,7 +460,7 @@ Onglet regroupant les paramètres systèmes du module.
 
 > **Tip**
 >
-> Les modules sur piles se réveillent à des cycles réguliers, appelés intervalles de réveil (Wakeup Interval). L’intervalle de réveil est un compromis entre le temps maximal de vie de la batterie et les réponses souhaitées du dispositif. Pour maximiser la durée de vie de vos modules, adapter la valeur Wakeup Interval par exemple à 14400 secondes (4h), voir encore plus élevé selon les modules et leur usage. ![node11](../images/node11.png)
+> Les modules sur piles se réveillent à des cycles réguliers, appelés intervalles de réveil (Wakeup Interval). L’intervalle de réveil est un compromis entre le temps maximal de vie de la batterie et les réponses souhaitées du dispositif. Pour maximiser la durée de vie de vos modules, adapter la valeur Wakeup Interval par exemple à 14400 secondes (4h), voire encore plus élevé selon les modules et leur usage. ![node11](../images/node11.png)
 
 > **Tip**
 >
@@ -498,7 +498,7 @@ Une fois lancé, il est recommandé de fermer l’écran de configuration du mod
 
 > **Important**
 >
-> Seul les modules sur pile peuvent être supprimés via cette assistant.
+> Seul les modules sur pile peuvent être supprimés via cet assistant.
 
 ## Statistiques
 
@@ -697,13 +697,13 @@ Explication la légende des couleurs :
 -   **Noir** : Le contrôleur principal, en général représenté comme Jeedom.
 -   **Vert** : Communication directe avec le contrôleur, idéal.
 -   **Blue** : Pour les contrôleurs, comme les télécommandes, ils sont associés au contrôleur primaire, mais n’ont pas de voisin.
--   **Jaune** : Toute les routes ont plus d’un saut avant d’arriver au contrôleur.
+-   **Jaune** : Toutes les routes ont plus d’un saut avant d’arriver au contrôleur.
 -   **Gris** : L’interview n’est pas encore complété, les liens seront réellement connus une fois l’interview complété.
--   **Rouge** : présumé mort, ou sans voisin, ne participe pas/plus au maillage du réseau.
+-   **Rouge** : Présumé mort, ou sans voisin, ne participe pas/plus au maillage du réseau.
 
 > **Tip**
 >
-> Seul les équipements actifs seront affichés dans le graphique réseau.
+> Seuls les équipements actifs seront affichés dans le graphique réseau.
 
 Le réseau Z-Wave est constitué de trois différents types de nœuds avec trois fonctions principales.
 
@@ -727,11 +727,11 @@ Explication la légende des couleurs :
 
 > **Tip**
 >
-> Seul les équipements actifs seront affichés dans le graphique réseau.
+> Seuls les équipements actifs seront affichés dans le graphique réseau.
 
 > **Important**
 >
-> Un module présumé mort, ne participe pas/plus au maillage du réseau. Il sera marqué ici d’un point d’exclamation rouge dans un triangle.
+> Un module présumé mort ne participe pas/plus au maillage du réseau. Il sera marqué ici d’un point d’exclamation rouge dans un triangle.
 
 > **Tip**
 >
@@ -768,7 +768,7 @@ Vous avez ici :
 >
 > Les équipements désactivés seront affichés mais aucune information de diagnostic ne sera présente.
 
-Le nom du module peut-être suivit par une ou deux images:
+Le nom du module peut-être suivi par une ou deux images:
 
 ![health04](../images/health04.png) Modules supportant la COMMAND\_CLASS\_ZWAVE\_PLUS\_INFO
 
@@ -849,8 +849,8 @@ Détails des notifications envoyées par les modules
 -   **NoOperation** Rapport sur un test du noeud (Ping), que le message a été envoyé avec succès.
 -   **Awake** Signaler quand un noeud vient de se réveiller
 -   **Sleep** Signaler quand un noeud s’est endormi.
--   **Dead** Signaler quand un nœud est présumé mort.
--   **Alive** Signaler quand un nœud est relancé.
+-   **Dead** Signaler quand un noeud est présumé mort.
+-   **Alive** Signaler quand un noeud est relancé.
 
 # Backups
 
@@ -882,7 +882,7 @@ Une fois la mise à jour des dépendances complétée, le démon se relancera au
 >
 > Dans l’éventualité où la mise à jour des dépendances ne se complèterait pas, veillez consulter le log **Openzwave\_update** qui devrait vous informer sur le problème.
 
-# Liste des modules compatible
+# Liste des modules compatibles
 
 Vous trouverez la liste des modules compatibles
 [ici](https://compatibility.jeedom.com/index.php?v=d&p=home&search=&plugin=openzwave)
@@ -893,9 +893,9 @@ Vous trouverez la liste des modules compatibles
 
 ![troubleshooting01](../images/troubleshooting01.png)
 
-Lancer la Regénération de la détection du nœud depuis l’onglet Actions du module.
+Lancer la Regénération de la détection du noeud depuis l’onglet Actions du module.
 
-Si vous avez plusieurs modules dans ce cas de figure, lancer **Regénérer la détection de nœuds inconnues** depuis l’écran **Réseau ZWave** onglet **Actions**.
+Si vous avez plusieurs modules dans ce cas de figure, lancer **Regénérer la détection de noeuds inconnus** depuis l’écran **Réseau ZWave** onglet **Actions**.
 
 ## Mon module est présumé mort par le controleur Dead
 
@@ -1117,7 +1117,7 @@ Si le problème persiste, il faut réinitialiser le contrôleur:
 
 ## Erreur lors des dependances
 
-Plusieurs erreurs peuvent survenir lors de la mise à jour des dépendances. Il faut consulter le log de mise à jour des dépendances afin de déterminer quelle est exactement l’erreur. De façon générale, l’erreur se trouve à la fin du log dans les quelque dernières lignes.
+Plusieurs erreurs peuvent survenir lors de la mise à jour des dépendances. Il faut consulter le log de mise à jour des dépendances afin de déterminer quelle est exactement l’erreur. De façon générale, l’erreur se trouve à la fin du log dans les quelques dernières lignes.
 
 Voici les possibles problèmes ainsi que leurs possibles résolutions:
 
@@ -1164,7 +1164,7 @@ Pour suivre l’avancement de la compilation, on fait un tail sur le fichier log
     tail -f /var/www/html/log/openzwave_update
 ````
 
-Lorsque la compilation est terminée et sans erreur, relancez les services que vous avez arrêté
+Lorsque la compilation est terminée et sans erreur, relancez les services que vous avez arrêtés
 
 ````
 sudo systemctl start cron sudo systemctl start apache2 sudo systemctl
@@ -1215,4 +1215,4 @@ URL = ``http://token:a1b2c3d4e5f6g7h8@192.168.0.1:8083/ZWaveAPI/Run/devices\[2\]
 
 > **J'ai l'erreur "Not enough space in stream buffer"**
 >
-> Malheureusement cette erreur est matériel, nous ne pouvons rien y faire et cherchons pour le moment comment forcer un redémarrage du démon dans le cas de cette erreur (mais souvent il faut en plus débrancher la clef pendant 5min pour que ca reparte)
+> Malheureusement cette erreur est matérielle, nous ne pouvons rien y faire et cherchons pour le moment comment forcer un redémarrage du démon dans le cas de cette erreur (mais souvent il faut en plus débrancher la clef pendant 5min pour que ca reparte)
